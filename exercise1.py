@@ -10,7 +10,10 @@ email_addresses = 'https://als-hiring.s3.amazonaws.com/fake_data/2020-07-01_17%3
 # If email not present, assumed to still be subscribed where chapter_id is 1
 subscription_status = 'https://als-hiring.s3.amazonaws.com/fake_data/2020-07-01_17%3A11%3A00/cons_email_chapter_subscription.csv'
 
-# Create dataframes with necessary columns from CSV files
+# Create dataframes with necessary columns from CSV files:
+
+# Of the two options, I used 'source' for source code, as it had more meaningful data for a client
+# I used the created and modified dates from the consituents file as the exercise wanted the dates relevant to the person
 constituents = pd.read_csv(constituent_info, usecols = ['cons_id', 'source', 'create_dt', 'modified_dt'])
 emails = pd.read_csv(email_addresses, usecols = ['cons_email_id', 'cons_id', 'is_primary', 'email'])
 status = pd.read_csv(subscription_status, usecols = ['cons_email_id', 'chapter_id', 'isunsub'])

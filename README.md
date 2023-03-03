@@ -1,6 +1,5 @@
 # MissionWired Data Engineer Exercise
 
 ## To install and run this application locally:
-* CLone github repo and navigate to the working directory
-* Set up and activate your preferred virtual enviornment
+* Exercise was completed using Python 3.9.14, incompatibilities may occur with earlier versions.
 * Install pandas using the terminal command 'pip install pandas'
